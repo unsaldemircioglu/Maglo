@@ -1,0 +1,118 @@
+//Variables
+$color-bg-card: #f9fafb;
+$color-bg-icon: #ffffff;
+$color-border: #e5e7eb;
+$color-label: #6b7280;
+$color-value: #111827;
+$color-cardBalance: rgb(54, 58, 63);
+$color-iconBalance: rgb(78, 82, 87);
+$color-cardText: azure;
+
+$radius-card: 12px;
+$radius-icon: 100px;
+
+$padding-card: 1rem;
+$padding-icon: 0.5rem;
+
+$gap-main: 1.5rem;
+$gap-icon: 1rem;
+
+$font-label: 0.9rem;
+$font-value: 1.2rem;
+$font-icon: 2rem;
+
+$shadow-card: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+//Layout
+.article-dashboard {
+  display: flex;
+  justify-content: space-between;
+  gap: $gap-main;
+  margin-bottom: 1rem;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+
+.card {
+  flex: 0 0 32%;
+  background-color: $color-bg-card;
+  border: 1px solid $color-border;
+  border-radius: $radius-card;
+  padding: $padding-card;
+  display: flex;
+  align-items: center;
+  gap: $gap-icon;
+  box-shadow: $shadow-card;
+  transition: transform 0.2s ease;
+  min-width: 250px;
+  height: 140px;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.card-icon {
+  background-color: $color-bg-icon;
+  padding: $padding-icon;
+  border-radius: $radius-card;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: $font-label;
+  color: $color-label;
+  margin-bottom: 0.25rem;
+}
+
+.value {
+  font-size: $font-value;
+  font-weight: bold;
+  color: $color-value;
+}
+
+//Legacy Styles (optional cleanup)
+.article_dashboard {
+  display: flex;
+  gap: 1%;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cardBalance {
+  background: $color-cardBalance;
+  color: $color-cardText;
+}
+
+#iconBalance {
+  background: $color-iconBalance;
+}
+
+.iconOfCard {
+  border: 1px hidden yellow;
+  border-radius: $radius-icon;
+  display: flex;
+  justify-content: center;
+  font-size: $font-icon;
+  width: 20%;
+  padding: 3%;
+  background: rgb(248, 248, 248);
+}
+
+
+
+/*
+Author => Ünsal Demircioğlu
+Github => https://github.com/unsaldemircioglu
+*/

@@ -1,0 +1,92 @@
+// Variables
+// NavMenu Properties
+$navmenu-bg: #f9fafb;
+$navmenu-padding: 1rem;
+$navmenu-height: 100vh;
+// List Properties
+$list-margin-top: 2rem;
+$list-item-margin-bottom: 0.5rem;
+// Item Properties
+$item-gap: 0.75rem;
+$item-padding-y: 0.75rem;
+$item-padding-x: 1rem;
+$item-color: #4b5563;
+$item-font-weight: 600;
+$item-radius: 8px;
+$item-hover-bg: rgb(200, 238, 68);
+$item-hover-color: black;
+// Icons Properties
+$icon-size: 1.2rem;
+$footer-gap: 1rem;
+
+// Container 
+.navmenu-container {
+  display: flex;
+  flex-direction: column;
+  height: $navmenu-height;
+  padding: $navmenu-padding;
+  background-color: $navmenu-bg;
+}
+
+// List 
+.navmenu-list {
+  list-style: none;
+  padding: 0;
+  margin-top: $list-margin-top;
+
+  li {
+    margin-bottom: $list-item-margin-bottom;
+  }
+}
+
+// Item 
+.navmenu-item {
+  display: flex;
+  align-items: center;
+  gap: $item-gap;
+  padding: $item-padding-y $item-padding-x;
+  color: $item-color;
+  font-weight: $item-font-weight;
+  text-decoration: none;
+  border-radius: $item-radius;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: $item-hover-bg;
+    color: $item-hover-color;
+  }
+
+  span {
+    color: inherit;
+  }
+
+  svg {
+    color: inherit;
+    font-size: $icon-size;
+  }
+}
+
+// Footer 
+.navmenu-footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: $footer-gap;
+}
+
+// Trash(Selected Element FirstOne)
+ul {
+  li:first-child {
+    background-color: $item-hover-bg;
+    color: $item-hover-color;
+      font-weight: $item-font-weight;
+  text-decoration: none;
+  border-radius: $item-radius;
+  }
+}
+
+
+/*
+Author => Ünsal Demircioğlu
+Github => https://github.com/unsaldemircioglu
+*/

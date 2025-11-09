@@ -1,0 +1,57 @@
+{
+  "success": true,
+  "message": "Scheduled transfers retrieved successfully.",
+  "data": {
+    "transfers": [
+      {
+        "id": "sch_001",
+        "name": "Saleh Ahmed",
+        "image": "https://ui-avatars.com/api/?name=Saleh+Ahmed&background=random&size=100",
+        "date": "2022-04-28T11:00:00Z",
+        "amount": -435.00,
+        "currency": "$",
+        "status": "scheduled"
+      },
+      {
+        "id": "sch_002",
+        "name": "Delowar Hossain",
+        "image": "https://ui-avatars.com/api/?name=Delowar+Hossain&background=random&size=100",
+        "date": "2022-04-25T11:00:00Z",
+        "amount": -132.00,
+        "currency": "$",
+        "status": "scheduled"
+      },
+      {
+        "id": "sch_003",
+        "name": "Moinul Hasan Nayem",
+        "image": "https://ui-avatars.com/api/?name=Moinul+Hasan+Nayem&background=random&size=100",
+        "date": "2022-04-25T11:00:00Z",
+        "amount": -826.00,
+        "currency": "$",
+        "status": "scheduled"
+      },
+      {
+        "id": "sch_004",
+        "name": "Dr. Jubed Ahmed",
+        "image": "https://ui-avatars.com/api/?name=Dr.+Jubed+Ahmed&background=random&size=100",
+        "date": "2022-04-25T11:00:00Z",
+        "amount": -435.00,
+        "currency": "$",
+        "status": "scheduled"
+      },
+      {
+        "id": "sch_005",
+        "name": "AR. Jakir Alp",
+        "image": "https://ui-avatars.com/api/?name=AR.+Jakir+Alp&background=random&size=100",
+        "date": "2022-04-14T11:00:00Z",
+        "amount": -228.00,
+        "currency": "$",
+        "status": "scheduled"
+      }
+    ],
+    "summary": {
+      "totalScheduledAmount": -2056.00,
+      "count": 5
+    }
+  }
+}

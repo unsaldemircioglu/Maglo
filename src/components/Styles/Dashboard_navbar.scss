@@ -1,0 +1,73 @@
+//Variables
+$navbar-bg: #ffffff;
+$navbar-border: #e5e7eb;
+$navbar-padding-y: 1rem;
+$navbar-padding-x: 2rem;
+//Responsive Design
+$max-width: 1200px;
+//Header
+$header-font-size: 1.5rem;
+$header-font-weight: bold;
+$header-color: #1f2937;
+//Icon
+$icon-gap: 1.5rem;
+$icon-size: 1.5rem;
+$icon-color: #4b5563;
+//Profile avatar and text
+$profile-gap: 0.5rem;
+$username-font-size: 1rem;
+$username-font-weight: 500;
+$username-color: #1f2937;
+
+//Navbar Styles
+.navbar {
+  width: 100%;
+  padding: $navbar-padding-y $navbar-padding-x;
+  background-color: $navbar-bg;
+  border-bottom: 1px solid $navbar-border;
+  display: flex;
+  justify-content: center;
+}
+
+.top-bar {
+  width: 100%;
+  max-width: $max-width;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  font-size: $header-font-size;
+  font-weight: $header-font-weight;
+  color: $header-color;
+}
+
+.nav-icons-menu {
+  display: flex;
+  align-items: center;
+  gap: $icon-gap;
+}
+
+.nav-icon {
+  font-size: $icon-size;
+  color: $icon-color;
+  cursor: pointer;
+}
+// Profile Avatar
+.profile {
+  display: flex;
+  align-items: center;
+  gap: $profile-gap;
+}
+// Full Name
+.username {
+  font-size: $username-font-size;
+  font-weight: $username-font-weight;
+  color: $username-color;
+}
+
+/*
+Author => Ünsal Demircioğlu
+Github => https://github.com/unsaldemircioglu
+*/

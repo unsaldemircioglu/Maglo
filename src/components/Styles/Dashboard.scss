@@ -1,0 +1,98 @@
+// Variables
+$sidebar-width: 20%;
+$main-width: 80%;
+$sidebar-bg: #1f2937;
+$sidebar-text: #ffffff;
+// Propeties Main
+$main-bg: #ffffff;
+$navbar-padding: 1rem;
+$navbar-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+// Content
+$content-padding: 2rem;
+$content-gap: 2rem;
+$content-gap-mobile: 1rem;
+
+$top-gap: 1.5rem;
+$top-margin-bottom: 1rem;
+
+$breakpoint-lg: 1024px;
+$breakpoint-md: 768px;
+
+//Layout
+.dashboard-layout {
+  display: flex;
+  height: 100vh;
+}
+
+.dashboard-sidebar {
+  width: $sidebar-width;
+  background-color: $sidebar-bg;
+  color: $sidebar-text;
+}
+
+.dashboard-main {
+  width: $main-width;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $breakpoint-md) {
+    width: 100%;
+  }
+}
+
+
+//Navbar Propeties
+.dashboard-navbar {
+  width: 100%;
+  background-color: $main-bg;
+  padding: $navbar-padding;
+  box-shadow: $navbar-shadow;
+  z-index: 900;
+}
+
+
+//Dashboard Content
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: $content-gap;
+  padding: $content-padding;
+
+  @media (max-width: $breakpoint-md) {
+    gap: $content-gap-mobile;
+  }
+}
+
+
+//Responsive
+.dashboard-top {
+  display: flex;
+  flex-direction: row;
+  gap: $top-gap;
+  margin-bottom: $top-margin-bottom;
+
+  @media (max-width: $breakpoint-lg) {
+    flex-direction: column;
+    overflow-x: scroll;
+  }
+}
+
+
+//Details Propeties
+.dashboard-left {
+  flex: 3;
+}
+
+.dashboard-right {
+  flex: 2;
+}
+
+.dashboard-bottom {
+  width: 100%;
+  margin-top: 0;
+}
+
+/*
+Author => Ünsal Demircioğlu
+Github => https://github.com/unsaldemircioglu
+*/
